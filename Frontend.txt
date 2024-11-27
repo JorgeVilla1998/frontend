@@ -1,0 +1,1135 @@
+How Does The Internet Work
+
+The Internet works through a global network of interconnected computers and servers, communicating via standardized protocols. Data is broken into packets and routed through various network nodes using the Internet Protocol (IP). These packets travel across different physical infrastructures, including fiber optic cables, satellites, and wireless networks. The Transmission Control Protocol (TCP) ensures reliable delivery and reassembly of packets at their destination. Domain Name System (DNS) servers translate human-readable website names into IP addresses. When you access a website, your device sends a request to the appropriate server, which responds with the requested data. This process, facilitated by routers, switches, and other networking equipment, enables the seamless exchange of information across vast distances, forming the backbone of our digital communications.
+
+
+
+What is HTTP?
+HTTP (Hypertext Transfer Protocol) is the foundation of data communication on the World Wide Web. It’s an application-layer protocol that defines how messages are formatted and transmitted between web browsers and servers. HTTP operates on a request-response model: clients (usually web browsers) send requests to servers, which then respond with the requested data.
+
+HTTP request structure:
+Start Line (indicates the request type, the URL solicited and protocol version)
+Headers (contains extra info about browser type, accepted formats, authentication and more)
+Body (include some methods and information sent to the server)
+
+HTTP response structure:
+Status Line (indicates the HTTP version, a code status and a description)
+Headers (contains metadata like type of content or length of it)
+Body (contains information like HTML content)
+
+
+What is HTTPS?
+HTTPS (Hypertext Transfer Protocol Secure) is a secure version of HTTP that uses encryption to protect communication between the client and server. This encryption is achieved through the SSL/TLS protocol.
+
+The biggest difference between HTTP and HTTPS is the encryption and protocols, these ensure at the user that their information will not be intercepted by third people and a secure connection. 
+
+
+
+IP address: every device with internet connection has an IP address, this is the unique and exclusive web-address (device ID on the web). To identify the IP address for my PC/Laptop in terminal 'ipconfig'. Ip addresses are defined by 4 numbers and separated by three dots, they are compounded by binary numbers, each number between the dots corresponding to four binary numbers.
+
+Public and Private IP addresses: Public IP address are the unique number that identifies the network, on the other hand the private IP address is an specific address for each device on the intern network. The medium in charge of carrying out this process is the NAT (Network Address Translation). To know the IP address for an specific webpage I can use in Terminal the command 'ping web-name', for example 'ping google.com', other command to get an IP address is 'nslookup web-name', for example 'nslookup google.com'. 
+
+
+
+Domain Name
+A domain name is a human-readable address used to identify and access websites on the internet. It serves as a more memorable alternative to the numerical IP addresses that computers use to locate web servers. Domain names consist of two main parts: the second-level domain (usually the website or organization name) and the top-level domain (such as .com, .org, or .net). They are registered through domain registrars and must be unique within their top-level domain. 
+The Domain Name System (DNS) translates domain names into IP addresses, allowing users to access websites by typing in familiar names rather than complex number sequences. 
+
+
+
+DNS (Domain Name System) is a hierarchical, decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It translates human-readable domain names (like www.example.com) into IP addresses (like 192.0.2.1) that computers use to identify each other. DNS servers distributed worldwide work together to resolve these queries, forming a global directory service. The system uses a tree-like structure with root servers at the top, followed by top-level domain servers (.com, .org, etc.), authoritative name servers for specific domains, and local DNS servers. DNS is crucial for the functioning of the Internet, enabling users to access websites and services using memorable names instead of numerical IP addresses.
+
+
+
+Hosting
+Web hosting is a service that allows individuals and organizations to make their websites accessible on the internet. It involves storing website files on powerful computers called servers, which are connected to a high-speed network. When users enter a domain name in their browser, the web host serves the website’s content. Hosting services range from shared hosting (where multiple websites share server resources) to dedicated hosting (where a server is exclusively used by one client). Other types include VPS (Virtual Private Server) hosting, cloud hosting, and managed WordPress hosting.
+
+Hosting types:
+	Shared Hosting: many users share resources from the same server, it's perfect for small projects.
+	VPS Hosting: a physic server divided in many virtual machines offer specific resources to each user, it's ideal for medium projects or app with more needs in data.
+	Dedicated Hosting: it's a complete and specific hosting for an unique client, it's ideal for big sites with much visits or requests.	
+	Cloud Hosting: it use multiple interconnected servers on Cloud to give flexibility and high availability.
+	Free Hosting: it offers free hosting services but limited, t's ideal for personal projects or some tests.
+
+
+
+Server <===> Client
+
+Server: storage all information and data that we need 
+
+Server resources:
+	CPU(Central Processor Unit): it process tasks and requests, it can handle many requests at the same time.
+	RAM(Random Access Memory): it is the temporal memory for a device, it allows charge and execute programs quickly.
+	Storage: it's the space to save information and documents.
+	Bandwidth: it define the amount of data that server can send and receive, it affects the speed users can access to a website or services.
+	Operating System: It is the software that manages the server hardware and services. The most common are Linux and Windows Server.
+
+Server-Hosting relationship:
+Server is the hardware where data is stored, Hosting is the service used by this hardware to offer data access or app access in Internet.
+
+
+
+Browsers
+A web browser is a software application that enables a user to access and display web pages or other online content through its graphical user interface.
+
+
+
+Search/Request: the computer send the request or message to the ISP (Internet Service Provider), then the ISP send that request to the DNS (Domain Name Sever) and the DNS will search into their database the information (IP address) to answer my search, next this information is sent to my IP address.
+
+With NsLookop.io I can see the IP address for any website
+
+
+HTML: structure (objects)
+CSS: visual style (shapes, colors, positions)
+JavaScript: dynamic/interactive and functions
+
+*Use Google Chrome to inspect the HTML and CSS structure, we could modify and change some things to prove but when we refresh the page all will be back to the original and normal status, it happens because Chrome request the original page server to the website
+
+
+Tips:
+1. Apply every new knowledge I learn and practice a lot in different ways.
+2. Review the information and understand it no to keep information, do it to apply it and use it correctly.
+3. Replicate and take notes about the new information and how code it.
+4. Practice and remember, first time is the hardest time.
+5. Fix errors is the common daily routine for a developer/engineer 
+
+
+Steps to try to get stuck less
+1. Evaluate the expectation versus the reality, get a real point of view.
+2. Google it, try to search the error in Stack overflow or another source.
+3. Try to read and check carefully the code.
+4. Try to prove and test several scripts and ensure that they really work.
+
+
+
+
+
+HTML (Hyper Text Markup Language)
+
+Hyper Text or Hyper Links are pieces of text that can be joined and work in another websites.
+
+Markup Language is the way we mark and define the texts by labels.
+
+SEO (Search Engine Optimization): improve a website’s visibility and ranking in search engine results. Key elements include creating relevant, high-quality content, proper use of keywords, optimizing meta tags and URLs, ensuring mobile-friendliness, improving site speed, and building quality backlinks. SEO also focuses on user experience, including easy navigation and responsive design. Technical aspects like XML sitemaps, HTTPS security, and structured data markup play crucial roles.
+They are based on keywords and meta tags (h1 and other titles), content marketing (positive user experience and opinions), backlinks (links from other websites), responsive and adaptative templates, this is necessary to provide access to every users without the device used.
+SEO ON-PAGE is the position occupied for the in the browser based on elements like tags, headers, content or the structure.
+SEO OFF-PAGE is defined by things like user history, social media and blogs.
+
+
+Accessibility: Website accessibility is the practice of designing and developing websites that can be used by everyone, including people with disabilities. It involves implementing features and standards that make web content perceivable, operable, understandable, and robust for all users, regardless of their physical or cognitive abilities. This includes providing text alternatives for images, ensuring keyboard navigation, using sufficient color contrast, offering captions for audio content, and creating a consistent and predictable layout. Adhering to accessibility guidelines not only improves usability for people with disabilities but also enhances the overall user experience for all visitors while potentially increasing a site’s reach and legal compliance.
+
+
+Form validation:
+They are some necessary data provided by users to complete any request, for example sing in process, registration r sign in forms, these forms need some information con authenticate and valid identities, accounts, etc...
+It's a good practice to give some help and guides to the users and provide an intuitive form-structure to ensure the success of the process.
+
+
+
+HTLM Elements:
+Labels have an opening tags <> and closing tags </> 
+
+
+<h1> / <h6>
+Heading elements: are used to set levels between headers
+ 
+Don't use more than one h1 label
+Follow the levels: Title (h1), Subtitle (h2)...
+ 
+
+<p> content </p>:Paragraph elements (contain text)
+<br>: line break
+<hr>: horizontal rule or separation line
+<b> content </b>: bold
+
+
+Lists
+<ul> </ul>: unordered list
+<ol> </ol>: ordered list
+<li> </li>: list items/content
+*<dl> </dl>: description list
+*<dt> </dt>: Defines a term in a description list
+*<dd> </dd>: Details the term in a description list
+
+
+Hyperlinks/attributes:
+<tag attribute=value> Content </tag>
+<a href="http://www.google.com">This is a link</a>
+
+Draggable hyperlink: I can move the link and drag it.
+
+
+Image element
+<img src="url0" alt="description/>
+src: source
+alt: alternative text description
+
+<img src="https://raw.github.kitten.jpeg" alt="cat"/>
+
+*picsum.photos: Lorem Picsum to search random images
+
+
+
+Computer File Paths
+
+Folders contain files (they have an extension)
+
+
+Absolute file paths vs Relative file paths
+
+Absolute: they start for the root and usually are longer than relative paths, are useful when we need to navigate among local files and folders.
+
+Relative: They are commonly used to connect files between them, usually have a shorter path than absolutes, are more often used in web development.
+
+Special Characters: they are used to write relative paths
+.. : one more level
+. : stay within the current directory
+
+*Take a look of the levels into the folders
+
+
+
+Webpages:
+HTML5 - CSS3 - JavaScript (Framework) - DB
+
+Link many documents HTML, CSS and JavaScript 
+
+
+HTML Boilerplate: understand HTML structure
+
+<!DOCTYPE html>
+Declare and describe to the navigator the documento type.
+
+
+<html lang="language"> content ... </html>
+Indicates the language that will be used and the language that will be able to use for screen reader.
+
+
+<head> content... </head>
+This space is used to place important information that it wont be showed to the users, but is necessary to config the page
+
+*meta tag
+<meta charset="UTF-8">
+*title tag
+<title> title </title> (It will be showed in the window name)
+*link tag
+They are used to link CSS documents with HTML
+
+
+<body> content... </body>
+This space is the creation space, I will write all visible code here
+
+
+Span: is used to introduce an special character, word, phrase or sentence into another element
+
+
+Aside
+
+
+Article
+
+
+Section
+
+
+Forms
+	
+	buttons
+	text-box
+	checkbox
+	colors
+	date-calendar
+	input-img-vid-aud
+
+
+Tables
+
+
+Navbar
+
+
+Footer
+
+
+
+
+
+Web hosting:
+It's the process to make that websites will be able on Internet
+
+Local website or app => Web Server => Internet
+
+*To save all the necessary documents on a server it is necessary to create a repository (GitHub) and place all the files and documents in it, this will allow all people who visit or download the repository to work or view the website without errors.
+
+
+
+
+
+
+Cascading Style Sheets (CSS)
+It's used to customize and give style to the HTML. 
+
+
+Add a CSS document:
+
+There are three ways:
+
+Inline: they are commonly used to add a simple or few elements to the page, not to multiple webpages or a complete one
+
+CSS code goes into the HTML tag
+<html style="background: blue"> content... </html>
+
+
+
+
+Internal: they are used and useful to simple and static webpage
+
+It is inserted with style tag
+<html>
+	<head>
+		<style>
+			html {
+				background: red;
+			}
+		</style>
+	</head>
+</html>
+
+
+
+
+External: it's the most used way to add CSS style, it is used with multiple webpages
+
+In the HTML head
+<link href="css-doc-name.css"/>
+
+
+
+
+
+CSS Selectors:
+
+selector/h1 {
+	property: value / color: blue
+}
+
+
+Class and Class Selector: they are used to group some elements that share the same characteristics
+
+<h2 class="class-name"> content... </h2>
+.selector/.class-name{
+	property: value;
+}
+
+
+
+
+Id and Id Selectors: It should by apply to one single element 
+
+<h2 Id="Id-name"> content... </h2>
+#selector/#Id-name{
+	property: value;
+}
+
+
+
+Attribute Selector: there are many attributes
+
+html element[attribute]/p[draggable]{
+	property: value;/color: green;
+}
+
+I can define if an element has or not an attribute:
+
+<p draggable=	"true"> Drag me </p>
+<p draggable=	"false"> Don't drag me </p>
+
+In CSS:
+
+p[draggable="true"]{
+	color="blue";
+}
+
+
+
+
+CSS color properties: 
+
+Defined color
+RGB
+Hex code: #6digits
+
+pages: 
+https://mybrandnewlogo.com/color-palette-generator
+
+https://colorhunt.co/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/named-color
+
+
+
+Font Properties:
+font-weight
+font-size
+font-family
+
+Font-size: 
+pixels (px)
+point (pt)
+letter M (em) affected by parent
+relative root size (rem) affected by HTML root size
+
+
+Font-weight:
+normal/bold
+lighter/bolder
+number
+
+
+Font-family:
+first(typeface), second(generic font type)
+
+Google Fonts
+https://fonts.google.com/
+
+
+
+Text-align: page position
+
+text-align: start;
+text-align: end;
+text-align: left;
+text-align: right;
+text-align: center;
+text-align: justify;
+text-align: match-parent;
+
+
+
+Box model:
+
+Properties
+width
+height
+border: size type color;
+	border-width: top, right, bottom, left
+	border-top, border-right, border-bottom, border-left
+
+padding: space between the element and the border
+
+ 
+margin: space between the screen area and the border
+
+
+Div tag: invisible box
+<div> content... <div>
+
+
+CSS priority
+
+Position: the last is the first
+Specificity:
+	1. Id
+	2. Attribute
+	3. Class
+	4. Element
+Type:
+	1. Inline
+	2. Internal
+	3. External
+Importance:
+If I use keyword "¡important!" after value this property will be the first and the most important to CSS
+
+
+
+Combine Selectors
+
+Rules:
+
+Group: select several selectors and separate them by a comma
+
+h1, h2{
+	color: blue;
+}
+
+
+
+Child: use the ">", parent > child
+
+element/.class/id > element/.class/id
+
+.box > p{
+	color: green;
+}
+
+
+
+Descendant: ancestor descendant, the space is the mark
+
+Ancestor-Selector Descendant-Selector
+
+.box li{
+	color: blue;
+}
+ 
+
+
+Chaining: apply where all selectors are true, I have to write all selectors without spaces
+
+
+
+
+CSS Position:
+
+https://appbrewery.github.io/css-positioning/
+
+Static: static/default position in the screen or div, this type place an element over another element
+Relative: it take a position based on the space available in the screen or div, elements position will change according to the other elements
+Absolute: it take the position according to the nearest positioned ancestor or top left corner, it is posible to move it (Z-index: it determinate which elements go on top of which in the Z-axis, which is in front or behind to the other)
+Fixed: it will be fixed no matter how the scree will be moved
+Sticky: this property stick an element on top after reach X position.
+
+
+
+
+CSS Display
+
+
+https://appbrewery.github.io/css-display/
+
+
+Block: display elements one below other, each element will take all the line space, full width, and if I place another element it will be positioned below of the first element. 
+
+Inline: display elements in the same line until end the screen space, width and height will fit the content size.
+
+Inline-Block: it's a mix of both, primary inline until the element or the elements fill the screen, then the elements will be positioned below the first line, elements could have different sizes and this wont be a problem.
+
+None: this display type is useful when I have a command like a button that disappear an element or hide one and I need to change the element display. 
+
+
+
+CSS Float (wrap text)
+This property let to use the space around the element with it, or displace an element to one side.
+
+Float values:
+left
+right
+inline-end
+inline-start
+inherit
+initial
+unset
+none
+
+
+To "clean" or delete float effect to any element I have to use the property 'clear: value' and set the value according to the position where is the element with float property, if I have two float elements and I need clean an element for those two elements I have to use 'clear: both'. 
+
+
+
+
+Responsive Wed Design
+
+4 way to create Responsive Web Pages
+
+1. Media Queries
+2. CCS Grid
+3. CSS Flexbox
+4. External Frameworks 
+
+http://127.0.0.1:5500/8.2+Responsiveness/8.2%20Responsiveness/index.html
+
+1. Media Query
+
+@media (max-width: 600px) {
+	CCS specific code
+}
+
+max-width/min-width: #px: defines the size of the screen, for example if I use 'max-width: 600px', that condition will apply on screens with 600px or less. On the other hand, if I use minimum width, it is the opposite condition.
+Combine: it's possible to combine both conditions, for example if I set '@media (min-width: 600px) and (max-width: 900px){
+	CSS conditions...
+}
+This condition define that when the screen size is between 600px and 900xp it will show X content
+
+or
+
+'@media (max-width: 600px) and (min-width: 900px) {
+	CSS conditions...
+}
+This condition define that when the screen size is lower than 600px or higher 900xp it will show X content
+
+I can set different conditions with this tool, it's possible to set many different width combinations.
+
+
+Device: define the screen orientation, could be: portrait (vertical), landscape (horizontal)
+
+
+
+
+
+2. CSS Flexbox
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Flex property set the width-height adaptation, it defines page structure.
+
+It's necessary to wrap the content and apply property 'display: flex' to this container.
+
+.container {
+	display: flex;
+	gap: #px; (this property sets the spacing between items)
+
+Flex-box Properties:
+
+display:
+	flex: use all the space in block.
+	inline-flex: it's like 'inline-block', it can use all the space it needs but other elements can use the rest of the space next to.
+
+gap: space between items
+
+flex-direction:
+	row: in line-horizontal
+	row-reverse: in line in reverse order
+	column: vertical
+	column-reverse: vertical in reverse order
+
+
+
+Flex-layout
+
+	flex: this property make that all the items take the same width/height possible in the space/screen.
+
+	order: this property define the items order and it's totally manipulated.
+
+	align self: this property align selected elements (with this property) on an independent position
+
+	align items (vertical and horizontal distribution, it's used with 'nowrap' layout): this property define the position on each element into the space, flex start (place the items at the start (top) of the page-space), flex end (place the items at the end (bottom) of the page-space), center (place items in center or the page-space), baseline (place all items in the same baseline, all share the same bottom start position), stretch (this property try to occupy as much space as possible)
+
+
+	align content (parent container) (vertical distribution with 'wrap' or 'wrap reverse'): flex start (place the items at the start (top) of the page-space), flex end (place the items at the end (bottom) of the page-space), center (place items in center or the page-space), space between (place the first and last item in the borders and let a space between the others), space around (let a space around each element with the same margin), space evenly (let a space around each element with the same space exactly) and stretch (this property try to occupy as much space as possible)
+
+
+	justify content (parent container) (horizontal distribution): flex start (place the items at the start (left) of the page-space), flex end (place the items at the end (right) of the page-space), center (place items in center or the page-space), space between (place the first and last item in the borders and let a space between the others), space around (let a space around each element with the same margin), space evenly (let a space around each element with the same space exactly) and stretch (this property try to occupy as much space as possible)
+
+
+	flex-wrap: this property is used to wrap all elements and order them according I need. There are many values, wrap (fit all the items into the available space), nowrap (Place items according to available space but can leave some out of sight), last but not least, wrap reverse (place all the items into the space but in reverse order)
+
+
+	flex-flow: this property combines flex-direction and flex-wrap.
+
+
+	Flex Sizing: this property defines items width or height based on the available space, it has many properties to different situations
+
+Based on flex-container settings:
+
+1°
+	max-width: the longest possible line of the text.
+	min-width: the largest word in the text define the minimum width.
+
+** max-width < flex-basis < min-width
+
+2°
+	flex-basis: this property define height in column direction and width in row direction
+
+3°
+	width / height: define the item size
+
+4°
+	content: the items container adapts their width based on content size
+
+
+Flex-grow: this property fill all the available space for the items in one line, the code is 'flex-basis: base width', 'flex-grow: 1; and 'flex-shrink: 0;', It is necessary that one is activated and the other is not.
+
+
+Flex-shrink: this property fill all the available space for the items in their container, based on the largest word, the code is 'flex-basis', 'flex-grow: 0; and 'flex-shrink: 1;', It is necessary that one is activated and the other is not. It's activated by default.
+
+
+
+
+
+3. CSS Grid
+Two dimensional layout system
+In comparison with flexbox. grid is more rigid, this display is based on row and columns in a square.
+
+Grid syntax:
+1. target my container
+2. set the 'grid-template-columns' and 'grid-template-rows' properties and finally the gap of them
+
+or
+
+grid-template: # # (rows) / # # (columns) 
+
+
+Example: 
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr (fr = fragment) 2fr;
+	grid-template-rows: 1fr 1fr;
+	gap: #px;
+
+
+Grid sizing (columns and rows): 
+
+Fractional size grid
+
+grid-template-rows: 1fr 2fr;
+grid-template-columns: 1fr 2fr;
+
+or
+
+This type of syntax allow to write the whole settings in one line
+
+grid-template: # # (rows) / # # (columns)
+
+ex:
+grid-template: 1fr 2fr / 1fr 2fr;
+
+
+
+
+Auto size grid
+
+The 'auto' value set that the column whit that value will take all the available space, on the other hand, the 'auto' value in row cases define that the space will fit content size, container/div space will take the space or size according to the content.
+
+ex:
+grid-template-rows: 100px auto;
+grid-template-columns: 200px auto
+
+
+
+
+Fixed size grid
+
+This value doesn't change or adjust the size, it's fixed.
+
+ex:
+grid-template-rows: 200px 400px;
+grid-template-columns: 300px 500px;
+
+
+ 
+
+Min-Max grid sizing
+
+This value limit the min and max width of row or columns
+
+ex:
+grid-template-rows: 200px 400px;
+grid-template-columns: 200px minmax (400px, 800px)
+
+
+
+
+Repeat syntax 
+
+Reduce the amount of times I write a fraction
+
+ex:
+grid-template-rows: repeat(2, 200px);
+grid-template-columns: repeat(2 100px);
+
+ 
+** If there is an extra div or an element out of the grid definition, that div will take content height-size and column width. In these cases also I can use the next property
+
+
+grid-template-rows: 200px 400px;
+grid-template-columns: 300px 500px;
+grid-auto-rows: 300px;
+
+
+This property gives a defined row size to extra elements.
+
+
+
+Grid Item Placement
+
+Grid item: all the elements into grid (rows and columns)
+Row tracks: rows into grid, they are created with grid-template-rows
+Column tracks: columns into grid, they are created with grid-template-columns
+Grid cells: the smallest unit in Grid display
+Grid lines: gap, space between items
+
+Properties
+
+Span: this property can be used as an enhancer, for example, if I use 'grid-column: span 2', the element duplicates their column size.
+
+Grid-column-start: this property defines where start a column based on grid lines.
+
+Grid-column-end: this property defines where end a column based on grid lines.
+
+Grid-row-start: this property defines where start a row based on grid lines.
+
+Grid-row-end: this property defines where end a row based on grid lines.
+
+Grid-column: start / end
+
+Grid-template: column size / row size
+
+Grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end
+
+
+ 
+
+
+
+4. Frameworks (Bootstrap) 
+
+https://getbootstrap.com/
+
+ 
+This tool works with pre-made classes, it's only necessary to know the right class to apply
+
+How to include Bootstrap settings into a project?
+CDN link: Content Delivery Network is a way to get many information quickly and easily. 
+
+I have to include two tags, first the 'link tag' in the 'Head' section and next, at the end of the 'Body' section I have to include the 'script tag'
+
+
+
+
+
+Bootstrap Layout
+
+12 sections/columns
+
+Bootstrap has an auto-fit display, depend of the class it will define and show a display:
+
+(root)
+ .container 
+
+(extensions) these conditions are adaptable to this sizes and take all the space in smaller screens
+
+.container: <576px (by default)
+-sm: >=576px - 767px (cellphones)
+-md: >=768px - 991px (Ipads - tablets)
+-lg: >=992px - 1199px (small laptops)
+-xl: >=1200px - 1399px (laptops - desktops)
+-xxl: >=1400px (TV screens or more)
+-fluid: all
+
+
+
+Columns size: 
+col-#: is the amount of column-spaces to take.
+
+col (when I use just 'col' it's like an 'auto' value)
+
+
+Multiple Breakpoints (Breakpoints are points to adapt according to device)
+
+If I want to define specific breakpoints in one line it is:
+
+col-sm-# col-md-# col-lg-#
+
+
+
+Bootstrap components:
+
+I just need to copy and paste the code into my html code and customize it according to my needs or preferences
+
+Components: they are pre made elements to copy, paste and customize.
+
+Snippets: they are many pre-made styles and layouts to use.
+
+Spacing syntax: to modify or configure any element it's used the next syntax 'property' 'side' 'size(1-5 or auto)'
+Ex: margin-left: auto; = ml - auto
+
+Properties
+m - margin
+p - padding
+
+Sides
+t - top
+b - bottom
+l - left
+r - right
+x - left and right
+y - top and bottom
+
+Sizes
+0 - no margin and padding
+1 - 0.25
+2 - .5
+3 - 1
+4 - 1.5
+5 - 3
+auto - auto fit
+
+
+*Dark mode: 
+data-bs-theme="dark"
+
+
+
+CSS style properties:
+
+*Background Gradient Color: https://codepen.io/
+
+Transitions: they are short-simple, they have two status A and B, they are used in actions like hover or active.
+I have to 
+
+transition: property (all 'change all the properties', individual property)   duration   timing-function (linear 'start-finish-return' this value have the same pace, ease 'fast-slow at the end', ease-in 'slow at the begin and fast at the end', ease-out 'fast at the begin and slow at the end', ease-in-out 'fast in the process and slow in the end-point' )   delay behavior
+
+
+
+
+Animations: they are complex and complete changes of state used to generate a completely new element or view, they could have many states and duration, they are created and managed by keyframes and the animation property.
+
+animation: name  direction  timing-function  delay  iteration-count
+
+
+Keyframes: they are the control center to the animations, this space is used to config the changes and the time to change between states
+
+@keyframes animation-name{
+	0%{
+		properties to change...
+		...
+		...
+		...
+	}
+
+	50%{
+		properties to change...
+		...
+		...
+		...
+	}
+
+	100%{
+		properties to change...
+		...
+		...
+		...
+	}
+}
+
+
+or
+
+
+@keyframes animation-name{
+	from {
+		properties to change...
+		...
+		...
+		...
+	}
+
+	to {
+		properties to change...
+		...
+		...
+		...
+	}
+
+}
+
+
+
+Web Design Principles
+
+
+Colour Theory: the science used to create or select the correct color palette for a website, according to the mood, target audience, brand or specific characteristics.
+
+Red: energy, love, intensity
+Yellow: joy, intellect, attention
+Green: freshness, safety, growth
+Blue: stability, trust, serenity
+Purple: royalty, wealth, femininity
+White: pure, pacifism, free
+Black: strong, mystery, seriousness
+Gray: fancy, calm, sophisticated
+
+Pages:
+https://colorhunt.co/
+https://color.adobe.com/create/color-wheel
+
+
+
+Typography:
+
+Serif: rounded and little feet (serious, elegant, formal)
+Sans serif: perfect right angles (humanist, relax, readable)
+
+
+
+User Interface Design (UI)
+
+1. Contrast content color with background color.
+2. Use an important and strong contrast to attract user attention.
+3. Make the important sections bigger (hierarchy).
+4. Make an interesting and attractive layout to get the attention.
+5. Text length is important, try to use between 40 and 60 characters per line.
+6. Use compatible alignment, try that title and content-text have the same alignment, on the  other hand, try to reduce the alignment lines-positions, try to have the same elements-objects alignment.
+7. White-empty space is an important resource to get and keep the user attention, it gives a clear and organized image and perception, it's useful to show some options or products.
+
+
+
+User Experience Design (UX)
+
+It could be described as the natural user path, it is the most common and intuitive way for users to use the website.
+
+1. Simplicity: keep the things simple is always the best way to give at the users an intuitive and easy website or app.
+2. Consistency: keep a consistent and useful design, use common elements that can be in the different pages the most of the time or helper-elements to guide the users, keep the same alignment and fonts.
+3. Reading patterns: the most used is the 'F pattern', commonly the users start read from left to right and next go down and repeat the same pattern. Other is the 'Z pattern', starting from top-left corner, next the top-right corner and repeating the same direction but on the bottom.
+4. All platform design: make the website or the app available and responsive for all devices and adjust the layouts and content to be pleasing to the eye.
+
+
+
+
+
+
+JavaScript
+
+
+Gives functionality to webpages
+
+ECMA Script (European Computer Manufactures Association) 
+
+JavaScript is supported for all web browsers
+
+JavaScript is an interpreted language, it is translated an executed line by line during runtime.
+
+Difference between interpreted and compilated languages
+
+(Compiled Languages
+	In compiled languages, the source code is converted into an executable file before the program runs. This process is performed by software called a compiler.
+
+
+Features:
+	Pre-execution translation: The source code (the program you write) is fully translated into machine code before execution.
+	Faster execution: Once compiled, the program runs faster because it's already in a format the computer understands.
+	Error detection during compilation: Errors are caught before the program is executed.
+	Limited portability: Executable files are typically specific to an operating system or hardware.
+
+Examples:
+	C: Code in C is compiled using tools like gcc.
+	C++: Similar to C, it uses a compiler to create executable programs.
+
+
+
+Interpreted Languages
+	In interpreted languages, the source code is translated and executed line by line during runtime. This is done by software called an interpreter.
+
+Features:
+	Real-time translation: The interpreter converts the code into machine code line by line while the program is running.
+	Slower execution: Translating code line by line takes more time.
+	Greater flexibility: You can test and modify code easily without recompiling it.
+	Portability: The same code can run on different operating systems as long as the appropriate interpreter is available.
+
+Examples:
+	Python: Uses an interpreter to translate and execute code.
+	JavaScript: Executes through interpreters like web browsers.)
+
+ 
+Write a comment in JS:
+
+Single line
+// comment content.
+
+Multiple lines
+/* comment content. */ 
+
+
+
+JavaScript alerts: they're used to alert and inform the user about something specific 
+code: alert("message");
+
+MDN to look for keywords or more information.
+
+
+Data Types:
+	Strings ""
+	Integer 1
+	Float 1.5
+	Booleans true/false
+	Bigint
+	Null
+	Undefined
+
+To know the type:
+typeof(data);
+typeof(1) ==> Number
+
+
+JavaScript Variables
+
+To declare a variable there are three ways
+
+var
+let
+const
+
+
+example:
+var myName = "Jorge";
+
+var: keyword to construct a variable
+myName: variable name
+ = : assign
+"Jorge": data content
+ ; = variable lock
+
+Use variables to store information-data is importan, I can use many variables but each one consume memory, so it's important to be aware when I really need to create and use a variable or not, because this could decrease the performance.
+
+
+Concatenate strings and variables
+keyword("Strings here" + varname);
+ex:
+alert("Your next tickets is the number " + ticketNumber);
+
+
+
+Naming and Naming Conventions for JavaScript variables
+
+- Use significative and easy-useful var names.
+- There are forbidden words to name variables
+	var, let, const and other keywords declaration names.
+- Variable names can't start for numbers or contain spaces.
+- Var names only can be named using letters, numbers, dollar symbol or underscore symbol (abc123$_).
+
+Camel case: thisIsAnExample
+Snake case: snake_case_example
+Pascal case: PascalCaseExample
+
+
+
+Strings:
+Concatenate strings is an useful feature, I can do it using plus symbol:
+
+exampe:
+
+keyword("Hello" + "World");
+
+I also can concatenate strings and variables or strings stored in variables and provide a customize prompt.
+
+Example 1:
+var alias = prompt("Write your alias: ");
+	George
+alert("Good morning" + alias);
+	Good morning George
+
+Example 2:
+var alias = prompt("Write your alias: ");
+var greeting = "Good morning";
+
+alert(greeting + " " + alias);
+
+Also I can find out the string length, I just have to use the method .length, I store a string into a variable and next I use the method.
+
+example:
+
+var name = "Jorge";
+name.length => 5;
+
+
+
+
+
+
+
+
+
+
+
+
+
